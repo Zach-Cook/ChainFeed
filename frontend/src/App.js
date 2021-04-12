@@ -1,11 +1,17 @@
+import React from 'react'
+import usePriceFeed from './hooks/usepricefeed'
 
 
-function App() {
+
+
+export default function App() {
+
+  // const feed = usePriceFeed()
+
   return (
     <div>
       test
+      {/* {feed} */}
     </div>
   );
 }
-
-export default App;
