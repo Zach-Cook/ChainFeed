@@ -6,12 +6,19 @@ import usePriceFeed from './hooks/usepricefeed'
 
 export default function App() {
 
-  // const feed = usePriceFeed()
+  const feed = usePriceFeed()
 
-  return (
-    <div>
-      test
-      {/* {feed} */}
-    </div>
-  );
+  
+  if (feed){
+    return (
+      <div>
+
+        <p>Price: {feed.feed}</p>
+        <p>Price: {feed.timeStamp}</p>
+      </div>
+    );
+  } else {
+    return <h1>Loading...</h1>
+  }
+  
 }
