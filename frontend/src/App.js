@@ -1,28 +1,33 @@
 import React from 'react'
-import usePriceFeed from './hooks/usepricefeed'
+import usePriceData from './hooks/usepricedata'
 
 import usdPairs from './data/usdpairs.json'
-
+import ethPairs from './data/ethpairs.json'
 
 export default function App() {
 
-  const priceData = usePriceFeed(usdPairs)
+  const usdPriceData = usePriceData(usdPairs, 'USD')
+  // const ethPriceData = usePriceData(ethPairs, 'ETH')
 
-  
-  console.log(priceData)
 
-  if (priceData){
+
+
+  if (usdPriceData){
     return (
       <div>
         
         {
-          priceData.map((price)=>(
-            <p>${price}</p>
-            
-            ))
+          usdPriceData ?
+            usdPriceData.map((price)=>(
+                <div key={price.id}>
+                  <p>{`$${price.pair}`}</p>
+                  <p>{`$${price.price}`}</p>
+                </div>
+              ))
+            :
+            null
         }
-        
-        
+
       </div>
     );
   } else {

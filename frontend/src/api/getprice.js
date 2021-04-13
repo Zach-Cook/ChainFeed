@@ -1,7 +1,5 @@
 import Web3 from 'web3';
 
-
-
 export default function getPrice(oracleAddress){
     const CHAINLINK_ORACLE_ABI = [
         {
@@ -40,10 +38,9 @@ export default function getPrice(oracleAddress){
 
 
     const price = oracle.methods.latestAnswer().call()
-    const timeStamp = oracle.methods.latestTimestamp().call()
 
 
-    return { price: price, timeStamp: timeStamp }
+    return { price: price}
 
 }
     
