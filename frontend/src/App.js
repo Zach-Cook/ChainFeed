@@ -1,20 +1,28 @@
 import React from 'react'
 import usePriceFeed from './hooks/usepricefeed'
 
-
+import usdPairs from './data/usdpairs.json'
 
 
 export default function App() {
 
-  const feed = usePriceFeed()
+  const priceData = usePriceFeed(usdPairs)
 
   
-  if (feed){
+  console.log(priceData)
+
+  if (priceData){
     return (
       <div>
-
-        <p>Price: {feed.feed}</p>
-        <p>Price: {feed.timeStamp}</p>
+        
+        {
+          priceData.map((price)=>(
+            <p>${price}</p>
+            
+            ))
+        }
+        
+        
       </div>
     );
   } else {

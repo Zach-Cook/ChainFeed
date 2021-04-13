@@ -1,21 +1,32 @@
 import { useState, useEffect} from 'react'
+import BigNumber from 'bignumber.js'
 
+import getPrice  from '../api/pricefeed';
 
-import getPriceFeed, { getPrice } from '../api/pricefeed';
+export default function usePriceFeed(usdPairs){
 
-export default function usePriceFeed(){
+    const [ price, setPrice] = useState([])
 
-    const [ feed, setFeed] = useState(null)
-    const [ timeStamp, setTimeStamp ] = useState(null)
 
     useEffect(()=>{
 
-        getPrice().price.then(resp => setFeed(resp))
-        getPrice().timeStamp.then(resp => setTimeStamp(resp))
+        let priceArr = []
+        for(let i = 0; i < usdPairs.length; i++){
+            getPrice(usdPairs[i].contractAddress).price.then(resp => {
+
+                let adjustedPrice = new BigNumber(resp).shiftedBy(-8)
+                const price = adjustedPrice.toString()
+                priceArr.push(price)
+                if (priceArr.length === usdPairs.length){
+                    setPrice(priceArr)
+                }
+            })
+            
+        }
+     
+
+
     }, [])
 
-    console.log(feed)
-    console.log(timeStamp)
-
-    return { feed, timeStamp }
+    return price
 }
