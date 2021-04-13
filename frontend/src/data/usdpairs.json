@@ -2,16 +2,19 @@
     {
         "id": "1",
         "pair": "ETH/USD",
-        "contractAddress": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+        "contractAddress": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+        "iconPath":""
     },
     {
         "id": "2",
         "pair": "BTC/USD",
-        "contractAddress": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c"
+        "contractAddress": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+        "iconPath":""
     },
     {
         "id": "3",
         "pair": "LINK/USD",
-        "contractAddress": "0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c"
+        "contractAddress": "0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c",
+        "iconPath":""
     }
 ]
