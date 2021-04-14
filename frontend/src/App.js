@@ -7,7 +7,8 @@ import usdPairs from './data/usdpairs.json'
 import ethPairs from './data/ethpairs.json'
 
 
-import HeaderContainer from './containers/header'
+import HeaderContainer from './containers/header';
+import MainContainer from './containers/main';
 
 export default function App() {
 
@@ -21,6 +22,8 @@ export default function App() {
     return (
       <div>
         <HeaderContainer/>
+        <MainContainer>
+        </MainContainer>
         {/* {
           usdPriceData ?
             usdPriceData.map((price)=>(
