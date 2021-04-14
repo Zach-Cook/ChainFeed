@@ -1,8 +1,13 @@
 import React from 'react'
 import usePriceData from './hooks/usepricedata'
 
+
+
 import usdPairs from './data/usdpairs.json'
 import ethPairs from './data/ethpairs.json'
+
+
+import HeaderContainer from './containers/header'
 
 export default function App() {
 
@@ -15,8 +20,8 @@ export default function App() {
   if (usdPriceData){
     return (
       <div>
-        
-        {
+        <HeaderContainer/>
+        {/* {
           usdPriceData ?
             usdPriceData.map((price)=>(
                 <div key={price.id}>
@@ -26,7 +31,7 @@ export default function App() {
               ))
             :
             null
-        }
+        } */}
 
       </div>
     );
