@@ -35,4 +35,5 @@ export const NavText = styled.h1`
     color: #375BD2;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2.5px;
+    font-size: ${props => props.fontSize ? props.fontSize : null};
 `
