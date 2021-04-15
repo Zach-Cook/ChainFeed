@@ -25,12 +25,15 @@ export default function FooterContainer(){
                     </Nav.LogoFrame>
  
                     <Nav.NavText 
-                        fontSize='24px' 
+                        fontSize='24px'
+                        mobileFontSize='14px' 
                         color='#f8f8f8' 
                         onClick={() => openInNewTab('https://chain.link/')}
                         textDecoration='underline'
                         cursor='pointer'
-                        >Powered by ChainLink</Nav.NavText>
+                    >
+                        Powered by ChainLink
+                    </Nav.NavText>
 
                     
                 </Nav.NavFrameInner>

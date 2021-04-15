@@ -31,7 +31,7 @@ export const Horizontal = styled.div`
     background: #f8f8f8;
     
     height: 2px;
-
+    
 
     @media screen and (min-width: 1280px){
         width: 25%;

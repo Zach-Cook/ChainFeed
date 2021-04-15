@@ -9,6 +9,7 @@ export const NavFrame = styled.header`
     display: flex;
     justify-content: center;
 
+
 `;
 
 export const NavFrameInner = styled.div`
@@ -17,17 +18,24 @@ export const NavFrameInner = styled.div`
     display: flex;  
     justify-content: space-between;
     align-items: center;
+
+
 `;
 
 
 export const LogoFrame = styled.div`
 
     margin: 10px 0;
-    width: 25%;
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 10px;
-        
+    
+
+    @media screen and (min-width: 1280px){
+        width: 25%;
+        justify-content: center;
+    }
 `;
 
 export const CreditFrame = styled.div`
@@ -48,9 +56,13 @@ export const NavText = styled.h1`
     color: ${props => props.color ? props.color: '#375BD2'};
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2.5px;
-    font-size: ${props => props.fontSize ? props.fontSize : null};
+    font-size: ${props => props.mobileFontSize ? props.mobileFontSize : '20px'};
 
     text-decoration: ${props => props.textDecoration ? props.textDecoration : null};
     cursor: ${props => props.cursor ? props.cursor : null};
-        
+    
+
+    @media screen and (min-width: 1280px){
+        font-size: ${props => props.fontSize ? props.fontSize : '2rem'};
+    }
 `
