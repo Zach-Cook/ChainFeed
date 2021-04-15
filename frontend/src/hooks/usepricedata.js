@@ -10,7 +10,7 @@ import getPrice  from '../api/getprice';
 export default function usePriceData(usdPairs, type){
 
     const [ priceData, setPriceData] = useState(null)
-
+    const [ isLoaded, setIsLoaded ] = useState(false)
 
     useEffect(()=>{
 
@@ -31,6 +31,7 @@ export default function usePriceData(usdPairs, type){
                         usdPairs[i].price = price
                         if (priceArr.length === usdPairs.length){
                             setPriceData(usdPairs)
+                            setIsLoaded(true)
                         }
                     })
                     
@@ -48,6 +49,7 @@ export default function usePriceData(usdPairs, type){
                         usdPairs[i].price = price
                         if (priceArr.length === usdPairs.length){
                             setPriceData(usdPairs)
+                            setIsLoaded(true)
                         }
                     })
                     
@@ -62,9 +64,10 @@ export default function usePriceData(usdPairs, type){
      
         return ()=> {
             setPriceData(null)
+            setIsLoaded(false)
         }
 
     }, [])
 
-    return priceData
+    return { priceData, isLoaded }
 }

@@ -51,7 +51,7 @@ export const CardGrid = styled.div`
 
     @media screen and (min-width: 1280px){
         
-        display: grid;
+        display: ${props => props.isLoaded ? 'grid' : 'flex'};
         grid-template-columns: 90%;
         width: 100%;
         // grid-gap: 5%;
