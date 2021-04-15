@@ -5,7 +5,7 @@ import { usdPairs } from '../data/usdpairs.js';
 import { Card } from '../components';
 
 
-export default function CardContainer(){
+export default function CardContainer({children, ...restProps}){
 
     const usdPriceData = usePriceData(usdPairs, 'USD')
 
@@ -31,7 +31,7 @@ export default function CardContainer(){
                             
                         ))
                             :
-                            <h1>Loading</h1>
+                        children
    
                     }
 
