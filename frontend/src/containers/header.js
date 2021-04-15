@@ -11,7 +11,7 @@ export default function HeaderContainer(){
             <Nav>
                 <Nav.NavFrameInner>
                     <Nav.LogoFrame>
-                        <Nav.NavText>CHAIN FEED</Nav.NavText>
+                        <Nav.NavText>ChainFeed</Nav.NavText>
                     </Nav.LogoFrame>
                     <Nav.NavText>About</Nav.NavText>
                 </Nav.NavFrameInner>

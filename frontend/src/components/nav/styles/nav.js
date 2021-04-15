@@ -33,6 +33,6 @@ export const LogoFrame = styled.div`
 export const NavText = styled.h1`
 
     color: #375BD2;
-    font-family: Bokor;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2.5px;
 `

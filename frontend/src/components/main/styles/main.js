@@ -17,6 +17,7 @@ export const MainFrame = styled.main`
 export const MainText = styled.h4`
     
     color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     margin-bottom: 0;
 `;
