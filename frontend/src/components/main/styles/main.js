@@ -9,9 +9,9 @@ export const MainFrame = styled.main`
     align-items: center;
     
 
-    @media screen and (min-width: 1280px){
-        min-height: 1000px;
-    }
+    // @media screen and (min-width: 1280px){
+    //     min-height: 1000px;
+    // }
 `;
 
 export const MainText = styled.h4`

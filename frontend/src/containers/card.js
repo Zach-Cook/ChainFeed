@@ -9,8 +9,6 @@ export default function CardContainer(){
 
     const usdPriceData = usePriceData(usdPairs, 'USD')
 
-    console.log(usdPriceData)
-
     return (
         <>
             <Card>

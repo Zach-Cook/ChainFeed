@@ -244,7 +244,7 @@ export const usdPairs = [
         "iconPath": images.YFI
     },
     {
-        "id": "36",
+        "id": "39",
         "pair": "IOST / USD",
         "contractAddress": "0xd0935838935349401c73a06FCde9d63f719e84E5",
         "iconPath": images.IOST

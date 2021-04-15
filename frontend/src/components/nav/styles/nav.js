@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const NavFrame = styled.header`
 
     background: #f8f8f8;
-    height: 100px;
+    // height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;

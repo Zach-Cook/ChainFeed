@@ -5,7 +5,11 @@ export const CardFrame = styled.div`
     display: flex;
     flex-direction: column;
     margin: 20px;
+    border: 2px solid green;
 
+    // overflow: scroll;
+
+    
     @media screen and (min-width: 1920px){
 
         width: 70%;
@@ -26,29 +30,42 @@ export const PairType = styled.h3`
 
 export const CardGrid = styled.div`
 
-    display: grid;
-    grid-template-columns: 90%;
-    width: 100%;
-    grid-gap: 5%;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+    
+    min-height: auto;
+    
+    border: 2px solid pink;
 
     @media screen and (min-width: 1280px){
-
-        grid-template-columns: 20% 20% 20% 20%;
+        display: grid;
+        grid-template-columns: 90%;
+        width: 100%;
+        grid-gap: 5%;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
 `
 
 export const CardItem = styled.div`
-
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #FFFFFF;
     box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25);
     border-radius: 5px;
     border-color: rgb(231, 232, 234);
+    background: #FFFFFF;
+
+    @media screen and (min-width: 1280px){
+        margin: 0;
+        
+
+    }
+    
 `
 
 export const CardItemInner = styled.div`
