@@ -5,13 +5,12 @@ export const CardFrame = styled.div`
     display: flex;
     flex-direction: column;
     margin: 20px;
-    border: 2px solid green;
 
     // overflow: scroll;
 
     
     @media screen and (min-width: 1920px){
-
+        margin-bottom: 100px;
         width: 70%;
 
     }
@@ -36,16 +35,17 @@ export const CardGrid = styled.div`
     
     min-height: auto;
     
-    border: 2px solid pink;
 
     @media screen and (min-width: 1280px){
+        
         display: grid;
         grid-template-columns: 90%;
         width: 100%;
-        grid-gap: 5%;
+        // grid-gap: 5%;
+        grid-row-gap: 25px;
         justify-content: space-between;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-
+        min-width: 0px;
     }
 `
 
@@ -59,8 +59,11 @@ export const CardItem = styled.div`
     border-radius: 5px;
     border-color: rgb(231, 232, 234);
     background: #FFFFFF;
+    
+
 
     @media screen and (min-width: 1280px){
+        width: 90%;
         margin: 0;
         
 
