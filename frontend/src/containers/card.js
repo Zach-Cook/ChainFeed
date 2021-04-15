@@ -1,7 +1,6 @@
 import React from 'react';
 import usePriceData from '../hooks/usepricedata';
-import usdPairs from '../data/usdpairs.json';
-import LINK from '../images/LINK.svg'
+import { usdPairs } from '../data/usdpairs.js';
 
 import { Card } from '../components';
 
@@ -10,10 +9,12 @@ export default function CardContainer(){
 
     const usdPriceData = usePriceData(usdPairs, 'USD')
 
+    console.log(usdPriceData)
+
     return (
         <>
             <Card>
-                <Card.PairType>USD PAIRS</Card.PairType>
+                <Card.PairType>USD Pairs</Card.PairType>
                 <Card.CardGrid>
                     {
                         usdPriceData ?
@@ -21,7 +22,7 @@ export default function CardContainer(){
 
                             <Card.CardItem key={price.id}>
                                 <Card.ItemInnerTop>
-                                    <Card.ItemLogo src={LINK}/>
+                                    <Card.ItemLogo src={price.iconPath} alt="Cant"/>
                                     <Card.ItemPairTitle>{price.pair}</Card.ItemPairTitle>
                                 </Card.ItemInnerTop>
                                 <Card.ItemInnerBottom>

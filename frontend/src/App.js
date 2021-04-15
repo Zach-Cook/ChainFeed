@@ -14,19 +14,15 @@ export default function App() {
 
 
 
-  if (true){
+
     return (
-      <div>
+      <>
         <HeaderContainer/>
         <MainContainer>
           <CardContainer/>
         </MainContainer>
         <HeaderContainer/>
-
-      </div>
+      </>
     );
-  } else {
-    return <h1>Loading...</h1>
-  }
   
 }

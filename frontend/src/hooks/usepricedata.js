@@ -3,10 +3,8 @@ import BigNumber from 'bignumber.js'
 
 import getPrice  from '../api/getprice';
 
-
 // BEWARE WET CODE IN THIS
 // WILL REFACTOR LATER
-
 
 
 export default function usePriceData(usdPairs, type){

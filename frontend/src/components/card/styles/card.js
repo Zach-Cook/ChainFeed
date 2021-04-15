@@ -15,7 +15,8 @@ export const CardFrame = styled.div`
 
 export const PairType = styled.h3`
 
-    font-family: Bokor;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
     font-size: 36px;
     color: #FFFFFF;
 
@@ -47,7 +48,7 @@ export const CardItem = styled.div`
     background: #FFFFFF;
     box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25);
     border-radius: 5px;
-
+    border-color: rgb(231, 232, 234);
 `
 
 export const CardItemInner = styled.div`
@@ -80,8 +81,7 @@ export const ItemPairTitle = styled.h6`
 
     margin: 0;
     margin-left: 10px;
-
-    font-family: Bokor;
+    font-weight: 100;
     font-size: 20px;
     text-align: center;
 
@@ -104,7 +104,7 @@ export const ItemInnerBottom = styled.div`
 export const ItemInnerPrice = styled.p`
     margin: 0;
     
-    font-size: 30px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     color: #494F55;
 
