@@ -11,7 +11,7 @@ import getPrice  from '../api/getprice';
 
 export default function usePriceData(usdPairs, type){
 
-    const [ price, setPrice] = useState(null)
+    const [ priceData, setPriceData] = useState(null)
 
 
     useEffect(()=>{
@@ -28,11 +28,11 @@ export default function usePriceData(usdPairs, type){
 
                         
                         let adjustedPrice = new BigNumber(resp).shiftedBy(-8)
-                        const price = adjustedPrice.toString()
+                        const price = adjustedPrice.toFixed(2)
                         priceArr.push(price)
                         usdPairs[i].price = price
                         if (priceArr.length === usdPairs.length){
-                            setPrice(usdPairs)
+                            setPriceData(usdPairs)
                         }
                     })
                     
@@ -49,7 +49,7 @@ export default function usePriceData(usdPairs, type){
                         priceArr.push(price)
                         usdPairs[i].price = price
                         if (priceArr.length === usdPairs.length){
-                            setPrice(usdPairs)
+                            setPriceData(usdPairs)
                         }
                     })
                     
@@ -66,5 +66,5 @@ export default function usePriceData(usdPairs, type){
 
     }, [])
 
-    return price
+    return priceData
 }

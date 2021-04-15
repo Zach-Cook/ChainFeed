@@ -5,6 +5,12 @@ export const CardFrame = styled.div`
     display: flex;
     flex-direction: column;
     margin: 20px;
+
+    @media screen and (min-width: 1920px){
+
+        width: 70%;
+
+    }
 `;
 
 export const PairType = styled.h3`
@@ -22,7 +28,7 @@ export const CardGrid = styled.div`
     display: grid;
     grid-template-columns: 90%;
     width: 100%;
-    grid-gap:5%;
+    grid-gap: 5%;
     justify-content: space-between;
 
     @media screen and (min-width: 1280px){
@@ -79,7 +85,8 @@ export const ItemPairTitle = styled.h6`
     font-size: 20px;
     text-align: center;
 
-    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494F55;
     
 `;
 
@@ -96,9 +103,9 @@ export const ItemInnerBottom = styled.div`
 
 export const ItemInnerPrice = styled.p`
     margin: 0;
-    font-family: Bokor;
+    
     font-size: 30px;
-
-    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494F55;
 
 `

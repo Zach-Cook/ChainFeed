@@ -7,6 +7,6 @@ export const GlobalStyles = createGlobalStyle`
         height: 100%;
     }
     @font-face {
-        font-family: Bokor;
+        font-family: Arial, Helvetica, sans-serif;
     }
 `;
