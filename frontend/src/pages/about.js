@@ -2,6 +2,7 @@ import React from 'react'
 
 import HeaderContainer from '../containers/header';
 import MainContainer from '../containers/main';
+import AboutContainer from '../containers/about';
 import FooterContainer from '../containers/footer';
 
 
@@ -14,7 +15,7 @@ export default function About(){
             <>
                 <HeaderContainer toPage='Home'/>
                 <MainContainer>
-                   <h1>test</h1>
+                    <AboutContainer/>
                 </MainContainer>
                 <FooterContainer/>
             </>
