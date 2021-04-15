@@ -13,6 +13,7 @@ export default function CardContainer(){
         <>
             <Card>
                 <Card.PairType>USD Pairs</Card.PairType>
+                <Card.Horizontal/>
                 <Card.CardGrid>
                     {
                         usdPriceData ?

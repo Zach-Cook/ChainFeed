@@ -6,7 +6,7 @@ export default function MainContainer({children}){
     return (
             <>
                 <Main>
-                    <Main.MainText>Price Data</Main.MainText>
+                    {/* <Main.MainText>Price Data</Main.MainText> */}
                     {children}
                 </Main>
             </>

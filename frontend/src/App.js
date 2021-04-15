@@ -9,14 +9,7 @@ import FooterContainer from './containers/footer';
 
 export default function App() {
 
-  
-
-
-
-
-
-
-    return (
+  return (
       <>
         <HeaderContainer/>
         <MainContainer>

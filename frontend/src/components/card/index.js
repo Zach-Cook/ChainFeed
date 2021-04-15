@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CardFrame, PairType, CardGrid, CardItem, CardItemInner, 
+import { CardFrame, PairType, Horizontal, CardGrid, CardItem, CardItemInner, 
     ItemInnerTop, ItemLogo, ItemPairTitle, ItemInnerBottom, ItemInnerPrice } from './styles/card';
 
 export default function Card({children, ...restProps}){
@@ -10,6 +10,10 @@ export default function Card({children, ...restProps}){
 
 Card.PairType = function CardPairType({children, ...restProps}){
     return <PairType {...restProps}>{children}</PairType>
+}
+
+Card.Horizontal = function CardHorizontal({children, ...restProps}){
+    return <Horizontal {...restProps}>{children}</Horizontal>
 }
 
 Card.CardGrid = function CardCardGrid({children, ...restProps}){

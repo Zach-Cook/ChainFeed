@@ -22,7 +22,20 @@ export const PairType = styled.h3`
     font-weight: 200;
     font-size: 36px;
     color: #FFFFFF;
+    margin-bottom: 0;
+`;
 
+export const Horizontal = styled.div`
+    border-radius: 2px;
+    margin-bottom: 25px;
+    background: #f8f8f8;
+    
+    height: 2px;
+
+
+    @media screen and (min-width: 1280px){
+        width: 25%;
+    }
 `;
 
 
