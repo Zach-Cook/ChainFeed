@@ -20,10 +20,16 @@ export const PairType = styled.h3`
 export const CardGrid = styled.div`
 
     display: grid;
-    grid-template-columns: 27% 27% 27%;
+    grid-template-columns: 90%;
     width: 100%;
-    grid-gap:7.5%;
+    grid-gap:5%;
     justify-content: space-between;
+
+    @media screen and (min-width: 1280px){
+
+        grid-template-columns: 20% 20% 20% 20%;
+
+    }
 `
 
 export const CardItem = styled.div`
