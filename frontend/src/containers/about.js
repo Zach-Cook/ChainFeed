@@ -20,7 +20,7 @@ export default function AboutContainer(){
                     <About.ContentTitle>---- The Solution</About.ContentTitle>
                     <About.ParagraphText>Blockchain's are as decentralized as their most decentralized point. To keep the decentralization of the network we must be able to provide off chain data in such a manner that no source of data is controlled or verified by one single party.</About.ParagraphText>
                     <About.ContentTitle>---- Chain Link</About.ContentTitle>
-                    <About.ParagraphText>Blockchain's are as decentralized as their most decentralized point. To keep the decentralization of the Blockchain we must be able to provide off chain data in such a manner that no source of data is controlled or verified by one single party.</About.ParagraphText>
+                    <About.ParagraphText>Chain Link provides this solution.</About.ParagraphText>
                 </About.ContentFrame>
             </About>
         </>
