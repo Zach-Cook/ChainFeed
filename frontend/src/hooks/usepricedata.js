@@ -60,7 +60,9 @@ export default function usePriceData(usdPairs, type){
         }
         
      
-        // need to add cleanup
+        return ()=> {
+            setPriceData(null)
+        }
 
     }, [])
 
