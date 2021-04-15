@@ -42,7 +42,7 @@ export const CardGrid = styled.div`
         grid-template-columns: 90%;
         width: 100%;
         // grid-gap: 5%;
-        grid-row-gap: 25px;
+        grid-row-gap: 35px;
         justify-content: space-between;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         min-width: 0px;
