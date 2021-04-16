@@ -1,17 +1,12 @@
 import React from 'react'
 
 import { Nav } from '../components';
-
+import { openInNewTab } from '../helpers/openinnewtab';
 
 export default function FooterContainer(){
 
 
-     // this is for security purposes
-     const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-      }
-
+     
     return (
         <>
 

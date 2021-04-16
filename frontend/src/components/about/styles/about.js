@@ -70,9 +70,25 @@ export const ParagraphText = styled.p`
     color: #FFFFFF;
     line-height: 1.8;
 
+    text-decoration: ${props => props.textDecoration ? props.textDecoration : null};
+    
+    cursor: ${props => props.cursor ? props.cursor : null};
+    
     @media screen and (min-width: 1280px){
         font-size: 22px;
+        margin-left: ${props => props.marginLeft ? props.marginLeft : null};
     }
 
 
+`;
+
+
+export const LearnMoreFrame = styled.div`
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1280px){
+        flex-direction: row;
+    }
 `;

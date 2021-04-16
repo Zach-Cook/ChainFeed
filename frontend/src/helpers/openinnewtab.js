@@ -1,0 +1,6 @@
+// this is for security purposes
+
+export const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AboutFrame, TitleFrame, Title, Horizontal, ContentFrame, ContentTitle, ParagraphText } from './styles/about';
+import { AboutFrame, TitleFrame, Title, Horizontal, ContentFrame, ContentTitle, ParagraphText, LearnMoreFrame } from './styles/about';
 
 export default function About({children, ...restProps}){
     return <AboutFrame {...restProps}>{children}</AboutFrame>
@@ -29,5 +29,9 @@ About.ContentTitle = function AboutContentTitle({children, ...restProps}){
 
 About.ParagraphText = function AboutParagraphText({children, ...restProps}){
     return <ParagraphText {...restProps}>{children}</ParagraphText>
+}
+
+About.LearnMoreFrame = function AboutLearnMoreFrame({children, ...restProps}){
+    return <LearnMoreFrame {...restProps}>{children}</LearnMoreFrame>
 }
 

@@ -8,6 +8,10 @@ export const CardFrame = styled.div`
 
     // overflow: scroll;
 
+    @media screen and (min-width: 1280px){
+        margin-bottom: 50px;
+
+    }
     
     @media screen and (min-width: 1920px){
         margin-bottom: 100px;
