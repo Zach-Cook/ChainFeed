@@ -27,7 +27,7 @@ export default function FooterContainer(){
                         textDecoration='underline'
                         cursor='pointer'
                     >
-                        Powered by ChainLink
+                        Powered by Chainlink
                     </Nav.NavText>
 
                     
