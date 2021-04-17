@@ -26,7 +26,7 @@ export const NavFrameInner = styled.div`
 export const LogoFrame = styled.div`
 
     margin: 10px 0;
-    width: 50%;
+    width: 15%;
     display: flex;
     justify-content: flex-start;
     border-radius: 10px;
