@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 
 import { Nav } from '../components';
 import { ROUTES } from '../services/config'
+import CoverImage from '../images/covercrop.png'
 
 export default function HeaderContainer(props){
 
@@ -29,7 +30,7 @@ export default function HeaderContainer(props){
             <Nav>
                 <Nav.NavFrameInner>
                     <Nav.LogoFrame>
-                        <Nav.NavText>ChainFeed</Nav.NavText>
+                        <Nav.Logo src={CoverImage}/>
                     </Nav.LogoFrame>
                     <Nav.NavText onClick={switchPage} cursor='pointer'>{props.toPage}</Nav.NavText>
                 </Nav.NavFrameInner>

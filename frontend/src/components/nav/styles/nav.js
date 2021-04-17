@@ -18,7 +18,7 @@ export const NavFrameInner = styled.div`
     display: flex;  
     justify-content: space-between;
     align-items: center;
-
+    
 
 `;
 
@@ -33,9 +33,16 @@ export const LogoFrame = styled.div`
     
 
     @media screen and (min-width: 1280px){
-        width: 25%;
+        margin:0;
+        width: 22%;
         justify-content: center;
     }
+`;
+
+export const Logo = styled.img`
+
+    width: 100%;
+
 `;
 
 export const CreditFrame = styled.div`
@@ -57,7 +64,7 @@ export const NavText = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2.5px;
     font-size: ${props => props.mobileFontSize ? props.mobileFontSize : '20px'};
-
+    font-weight: 100;
     text-decoration: ${props => props.textDecoration ? props.textDecoration : null};
     cursor: ${props => props.cursor ? props.cursor : null};
     

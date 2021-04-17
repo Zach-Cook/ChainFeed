@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavFrame, NavFrameInner, LogoFrame, TextLink, NavText } from './styles/nav'
+import { NavFrame, NavFrameInner, LogoFrame, Logo, TextLink, NavText } from './styles/nav'
 
 export default function Nav({children, ...restProps}){
 
@@ -12,6 +12,10 @@ Nav.NavFrameInner = function NavNavFrameInner({children, ...restProps}){
 
 Nav.LogoFrame = function NavLogoFrame({children, ...restProps}){
     return <LogoFrame {...restProps}>{children}</LogoFrame>
+}
+
+Nav.Logo = function NavLogo({children, ...restProps}){
+    return <Logo {...restProps}>{children}</Logo>
 }
 
 Nav.TextLink = function NavTextLink({children, ...restProps}){
