@@ -26,13 +26,14 @@ export const NavFrameInner = styled.div`
 export const LogoFrame = styled.div`
 
     margin: 10px 0;
-    width: 15%;
+    width: 35%;
     display: flex;
     justify-content: flex-start;
     border-radius: 10px;
-    
+    height: 65px;
 
     @media screen and (min-width: 1280px){
+        height: auto;
         margin:0;
         width: 22%;
         justify-content: center;
