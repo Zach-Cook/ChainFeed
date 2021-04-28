@@ -101,12 +101,12 @@ export const usdPairs = [
         "contractAddress": "0x8797ABc4641dE76342b8acE9C63e3301DC35e3d8",
         "iconPath": images.AMP
     },
-    {
-        "id": "17",
-        "pair": "AMPL / USD",
-        "contractAddress": "0xe20CA8D7546932360e37E9D72c1a47334af57706",
-        "iconPath": images.AMPL
-    },
+    // {
+    //     "id": "17",
+    //     "pair": "AMPL / USD",
+    //     "contractAddress": "0xe20CA8D7546932360e37E9D72c1a47334af57706",
+    //     "iconPath": images.AMPL
+    // },
     {
         "id": "18",
         "pair": "BAND / USD",
