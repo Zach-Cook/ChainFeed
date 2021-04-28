@@ -2,7 +2,7 @@ import React from 'react'
 
 import HeaderContainer from '../containers/header';
 import MainContainer from '../containers/main';
-import AboutContainer from '../containers/about';
+import { AboutContainer } from '../containers/about';
 import FooterContainer from '../containers/footer';
 
 

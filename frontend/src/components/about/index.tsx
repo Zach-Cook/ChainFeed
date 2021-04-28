@@ -1,12 +1,5 @@
-import React from 'react';
+import styled from 'styled-components';
 
-import { AboutFrame, TitleFrame, Title, Horizontal, ContentFrame, ContentTitle, ParagraphText, LearnMoreFrame } from './styles/about';
-
-interface Props {
-  
-    children?: any;
-    
-}
 
 interface ParagraphProps {
     children?: any;
@@ -14,45 +7,109 @@ interface ParagraphProps {
     marginLeft?: string;
     cursor?: string;
     onClick? : ()=> void;
+    
 }
 
-export const About: React.FC<Props> = ({children, ...restProps}) => {
-    return <AboutFrame {...restProps}>{children}</AboutFrame>
-}
+export const About = styled.div`
 
-export const AboutTitleFrame: React.FC<Props> = ({children, ...restProps}) => {
-    return <TitleFrame {...restProps}>{children}</TitleFrame>
-}
+    margin: 20px 0;
 
-export const AboutTitle: React.FC<Props> = ({children, ...restProps}) => {
-    return <Title {...restProps}>{children}</Title>
-}
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
 
-export const AboutHorizontal: React.FC<Props> = ({children, ...restProps})=> {
-    return <Horizontal {...restProps}>{children}</Horizontal>
-}
+    // background: #F8F8F8
 
-export const AboutContentFrame: React.FC<Props> = ({children, ...restProps}) =>{ 
-    return <ContentFrame {...restProps}>{children}</ContentFrame>
-}
+    @media screen and (min-width: 1280px){
+        width: 70%; 
+    }
+`;
 
-export const AboutContentTitle: React.FC<Props> = ({children, ...restProps}) =>{
-    return <ContentTitle {...restProps}>{children}</ContentTitle>
-}
+export const TitleFrame = styled.div`
 
-export const AboutParagraphText: React.FC<ParagraphProps> = (props) => {
+    width: 100%;
 
-    return <ParagraphText 
+`;
+
+export const Title = styled.h3`
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+`;
+
+export const Horizontal = styled.div`
+    border-radius: 2px;
+    margin-bottom: 25px;
+    background: #f8f8f8;
+    
+    height: 2px;
+    
+
+    @media screen and (min-width: 1280px){
+        width: 25%;
+    }
+`;
+
+export const ContentFrame = styled.div`
+
+
+    display: flex;
+    flex-direction: column;
+
+`;
+
+export const ContentTitle = styled.h6`
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    color: #FFFFFF;
+
+`;
+
+ const Text = styled.p<ParagraphProps>`
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.8;
+
+    text-decoration: ${props => props.textDecoration ? props.textDecoration : null};
+    
+    cursor: ${props => props.cursor ? props.cursor : null};
+    
+    @media screen and (min-width: 1280px){
+        font-size: 22px;
+        margin-left: ${props => props.marginLeft ? props.marginLeft : null};
+    }
+
+
+`;
+
+export const ParagraphText: React.FC<ParagraphProps> = (props) => {
+
+    return <Text 
                 textDecoration={props.textDecoration}
                 onClick={props.onClick}
                 marginLeft={props.marginLeft}
                 cursor={props.cursor} 
             >
                 {props.children}
-            </ParagraphText>
+            </Text>
 }
 
-export const AboutLearnMoreFrame: React.FC<Props> = ({children, ...restProps}) => {
-    return <LearnMoreFrame {...restProps}>{children}</LearnMoreFrame>
-}
 
+export const LearnMoreFrame = styled.div`
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1280px){
+        flex-direction: row;
+    }
+`;
