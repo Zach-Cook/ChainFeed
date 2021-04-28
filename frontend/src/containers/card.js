@@ -9,7 +9,6 @@ export default function CardContainer({children, ...restProps}){
 
     const { priceData, isLoaded} = usePriceData(usdPairs, 'USD')
 
-    console.log(isLoaded)
 
 
     if ( priceData && isLoaded){
