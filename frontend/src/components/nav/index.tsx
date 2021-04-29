@@ -5,11 +5,10 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const Header = styled.header`
 
-    background: '#f8f8f8'
+    background: #f8f8f8;
     width: 100%;
     display: flex;
     justify-content: center;
-
 
 `;
 
@@ -42,10 +41,11 @@ export const LogoFrame = styled.div`
     height: 65px;
 
     @media screen and (min-width: 1280px){
-        height: auto;
+        height: 140px;
         margin:0;
-        width: 22%;
+        width: 15%;
         justify-content: center;
+        align-items: center;
     }
 `;
 
