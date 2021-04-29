@@ -1,3 +1,5 @@
+
+![Alt text](frontend/src/images/cover.png?raw=true "Title")
 # ChainFeed.io
 [ChainFeed.io](https://chainfeed.io)
 
