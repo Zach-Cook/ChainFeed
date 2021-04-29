@@ -3,7 +3,7 @@ import { About, TitleFrame, Title, Horizontal, ContentFrame, ContentTitle, Parag
 import { openInNewTab } from '../helpers/openinnewtab';
 
 
-export const AboutContainer: React.FC = ({}) => {
+export const AboutContainer: React.FC = () => {
         return (
             <About>
                 <TitleFrame>
