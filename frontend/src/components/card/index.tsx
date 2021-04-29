@@ -1,6 +1,8 @@
+
 import styled from 'styled-components';
 
-export const CardFrame = styled.div`
+
+export const Card = styled.div`
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -42,9 +44,11 @@ export const Horizontal = styled.div`
     }
 `;
 
+interface gridProps {
+    isLoaded: boolean;
+}
 
-
-export const CardGrid = styled.div`
+export const CardGrid = styled.div<gridProps>`
 
     display: flex;
     flex-direction: column;

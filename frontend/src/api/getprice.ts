@@ -1,7 +1,8 @@
 import Web3 from 'web3';
 
-export default function getPrice(oracleAddress){
-    const CHAINLINK_ORACLE_ABI = [
+export default function getPrice(oracleAddress : string){
+    
+    const CHAINLINK_ORACLE_ABI: any = [
         {
             "constant": true,
             "inputs": [],
@@ -37,7 +38,7 @@ export default function getPrice(oracleAddress){
     let oracle = new w3.eth.Contract(CHAINLINK_ORACLE_ABI, oracleAddress);
 
 
-    const price = oracle.methods.latestAnswer().call()
+    const price : Promise<number> = oracle.methods.latestAnswer().call()
 
 
     return { price: price}
