@@ -5,9 +5,12 @@ import CardContainer from '../containers/card';
 import { FooterContainer } from '../containers/footer';
 import SpinnerContainer from '../containers/spinner';
 
-export default function Home(){
-    return (
-            
+interface homeProps {
+
+}
+
+export const Home: React.FC<homeProps> = ({}) => {
+        return (
             <>
                 <HeaderContainer toPage='About'/>
                 <MainContainer>
@@ -17,5 +20,5 @@ export default function Home(){
                 </MainContainer>
                 <FooterContainer/>
             </>
-    )
+        );
 }

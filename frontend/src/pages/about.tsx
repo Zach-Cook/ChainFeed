@@ -6,12 +6,13 @@ import { AboutContainer } from '../containers/about';
 import { FooterContainer } from '../containers/footer';
 
 
-export default function About(){
+interface aboutProps {
 
-    
+}
 
-    return (
-            
+export const About: React.FC<aboutProps> = ({}) => {
+        return (
+
             <>
                 <HeaderContainer toPage='Home'/>
                 <MainContainer>
@@ -19,5 +20,5 @@ export default function About(){
                 </MainContainer>
                 <FooterContainer/>
             </>
-    )
+        );
 }
