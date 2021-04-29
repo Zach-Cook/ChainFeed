@@ -6,7 +6,8 @@ import { FooterContainer } from '../containers/footer';
 import SpinnerContainer from '../containers/spinner';
 
 interface homeProps {
-
+    exact: boolean;
+    path: string;
 }
 
 export const Home: React.FC<homeProps> = ({}) => {

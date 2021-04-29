@@ -7,7 +7,8 @@ import { FooterContainer } from '../containers/footer';
 
 
 interface aboutProps {
-
+    exact: boolean;
+    path: string;
 }
 
 export const About: React.FC<aboutProps> = ({}) => {

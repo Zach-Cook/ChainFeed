@@ -4,9 +4,13 @@ import { Home } from './pages/home'
 import { About } from './pages/about'
 import { ROUTES } from './services/config'
 
-export default function App() {
 
-  return (
+interface AppProps {
+
+}
+
+export const App: React.FC<AppProps> = ({}) => {
+    return (
       <>
 
       <Router>
@@ -28,5 +32,4 @@ export default function App() {
       </Router>
       </>
     );
-  
 }
