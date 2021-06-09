@@ -30,10 +30,9 @@ export default function usePriceData(usdPairs: pairsProps, type: string) : {
                 // loops over the json file and passes the contract address to the function
                 // function returns promise of price
                 for(let i = 0; i < usdPairs.length; i++){
+                    
                     getPrice(usdPairs[i].contractAddress).price
                     .then(resp => {
-
-                        
                         let adjustedPrice = new BigNumber(resp).shiftedBy(-8)
                         const price = adjustedPrice.toFixed(2)
                         priceArr.push(price)
@@ -44,6 +43,10 @@ export default function usePriceData(usdPairs: pairsProps, type: string) : {
                             setPriceData(usdPairs)
                             setIsLoaded(true)
                         }
+                    })
+                    .catch(e=>{
+                        console.log('error')
+                        console.log(JSON.stringify(e))
                     })
                     
                 }

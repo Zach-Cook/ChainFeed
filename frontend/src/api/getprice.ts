@@ -40,7 +40,6 @@ export default function getPrice(oracleAddress : string){
 
     const price : Promise<number> = oracle.methods.latestAnswer().call()
 
-
     return { price: price}
 
 }

@@ -150,14 +150,14 @@ export const usdPairs: any = [
         contractAddress: "0x1A31D42149e82Eb99777f903C08A2E41A00085d3",
         iconPath: images.FIL
     },
-    {
-        id: "24",
-        pair: "FNX / USD",
-        contractAddress: "0x80070f7151BdDbbB1361937ad4839317af99AE6c",
-        iconPath: images.FNX
-    }
+    // {
+    //     id: "24",
+    //     pair: "FNX / USD",
+    //     contractAddress: "0x80070f7151BdDbbB1361937ad4839317af99AE6c",
+    //     iconPath: images.FNX
+    // }
 
-    ,
+    // ,
     {
         id: "25",
         pair: "HEGIC / USD",

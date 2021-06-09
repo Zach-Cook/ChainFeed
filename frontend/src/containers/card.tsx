@@ -14,9 +14,8 @@ interface cardProps {
 export const CardContainer: React.FC<cardProps> = ({children}) => {
     const { priceData, isLoaded} = usePriceData (usdPairs, 'USD')
 
-
-
     if ( priceData && isLoaded){
+
         return (
             <>
                 <Card>
